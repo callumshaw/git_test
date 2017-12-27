@@ -1,0 +1,105 @@
+div {margin: 0; padding: 0;}
+div div {background: orange; position: relative;}
+
+.logo {
+  height: 404px;
+  width: 334px;
+  margin:100px auto;
+}
+
+.head {
+  width: 220px;
+  height: 100px;
+  top: 32px;
+  border-radius: 110px 110px 0 0;
+  background: linear-gradient(to right, green 0%, green 33%, gold 33%, gold 66%, red 66%, red 100%);
+
+}
+
+
+#circleleft, #circleright {
+  background: black;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 42px;
+  border-radius: 10px;
+}
+#circleleft {
+  left: 50px;
+  z-index: 100;
+}
+
+#circleright {
+  right: 50px;
+  z-index: 100;
+}
+
+#stickleft, #stickright {
+  width: 6px;
+  height: 50px;
+  position: absolute;
+  top:  -34px;
+  border-radius: 3px;
+  background: linear-gradient(to left, green 0%, green 33%, gold 33%, gold 66%, red 66%, red 100%);
+}
+
+#stickleft {
+  left: 50px;
+  transform: rotate(-30deg);
+}
+
+#stickright {
+  right: 50px;
+  transform: rotate(+30deg);
+}
+
+.bottom {
+  width: 220px;
+  height: 184px;
+  top: 40px;
+  border-radius: 0 0 25px 25px;
+  background: linear-gradient(to right, green 0%, green 33%, gold 33%, gold 66%, red 66%, red 100%);
+}
+
+#armleft, #armright, #legleft, #legright {
+  width: 50px;
+  position: absolute;
+  background: linear-gradient(to bottom, green 0%, green 33%, gold 33%, gold 66%, red 66%, red 100%);
+}
+
+#armleft, #armright {
+  height: 150px;
+  border-radius: 25px;
+}
+
+#armleft {
+  left: -58px;
+}
+
+#armright {
+  right: -58px;
+}
+
+#legleft, #legright {
+  height: 80px;
+  top: 182px;
+  border-radius: 0 0 25px 25px;
+}
+
+#legleft{
+  left:45px;
+}
+
+#legright {
+  right: 45px;
+}
+
+.head:hover {
+  transform: translate(0px, -20px);
+  background: linear-gradient(to left, green 0%, green 33%, gold 33%, gold 66%, red 66%, red 100%);
+}
+
+.head:hover + .bottom {
+  background: linear-gradient(to left, green 0%, green 33%, gold 33%, gold 66%, red 66%, red 100%);
+}
